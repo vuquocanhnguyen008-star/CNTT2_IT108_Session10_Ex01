@@ -1,0 +1,22 @@
+## Bài 1: Chuẩn hóa tài liệu Markdown cho dự án
+### Phần 1: Phân tích lỗi cú pháp
+
+1. **Lỗi phân cấp Heading không hợp lý**:
+* **Chi tiết**: Dùng `###` ngay sau `#` (nhảy từ `H1` trực tiếp xuống `H3`).
+* **Nguyên nhân**: Vi phạm nguyên tắc phân cấp thứ tự tiêu đề (sau `H1` phải là `H2`).
+
+2. **Lỗi cú pháp chèn ảnh**:
+* **Chi tiết**: Viết `[Logo Dự án](https://greentech.vn/logo.png)` thiếu dấu `!` ở đầu.
+* **Nguyên nhân**: Khiến trình duyệt hiểu nhầm là một **Đường dẫn (Link)** chứ không phải **Hình ảnh (Image)**, dẫn đến ảnh không hiện.
+
+3. **Lỗi định dạng in đậm**:
+* **Chi tiết**: Viết `Rất quan trọng` chỉ bao quanh bởi 1 dấu sao `*Rất quan trọng*` (hoặc dùng 1 dấu sao).
+* **Nguyên nhân**: Dùng 1 dấu `*` sẽ render ra chữ *in nghiêng* (Emphasis), muốn in đậm (Bold) phải dùng 2 dấu `**`.
+
+### Phần 2: Đoạn mã Markdown chuẩn
+# Lợi ích của rau sạch
+![Logo Dự án](https://greentech.vn/logo.png)
+## Danh sách các loại rau
+**Rất quan trọng**
+
+
